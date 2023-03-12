@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microverse Exercise 2 Landing page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Microverse Exercise 2</title>
-  <link rel="stylesheet" href="styles.css">
-
-</head>
-
-<body>
-  <header id="header">
-    <img src="https://m.media-amazon.com/images/I/61l3qAFHwZL._AC_SX425_.jpg" alt="" id="header-img">
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1>"Hello World! we are software dvelopers" </h1>
+    <h2 id="header">
+      <nav id="nav-bar">
+          <img height="400px" id="header-img" src="https://m.media-amazon.com/images/I/61l3qAFHwZL._AC_SX425_.jpg"/>
+      </nav>
+    </h2>
     <nav id="nav-bar">
-      <a href="#header" id="nav-link">Features</a>
-      <a href="#" id="nav-link">how it works</a>
-      <a href="landingPage.html" id="nav-link">pricing</a>
+      <ul>
+        <li><a class="nav-link" href="#sec">Features</a></li>
+        <li><a class="nav-link" href="#sec">How It Works</a></li>
+        <li><a class="nav-link" href="#sec">Pricing</a></li>
+      </ul>
     </nav>
-  </header>
-
-  <iframe src="" frameborder="0" id="video"></iframe>
-
-  <form action="https://www.freecodecamp.com/email-submit" id="form">
-    <input type="text" id="email" placeholder="Email" required accept="text" />
-    <input type="submit" value="" id="submit">
-  </form>
-</body>
-<script src="index.js"></script>
-
+    <section id="sec">
+      <iframe id="video" height="300px" src="https://www.youtube.com/watch?v=Qrg8t34yXRs" frameborder="0" allowfullscreen>
+      </iframe>
+      <div class="flex-container">
+        <div>First</div>
+        <div>Second</div>
+        <div>Third</div>
+      </div>
+    </section>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" href="mailto:n3m3s15r4ptor@gmail.com"><input id = "email" placeholder="get your email here" type="email" ><input id = "submit" type="submit">Enviar</input></form>
+    <script  src="js/index.js"></script>
+  </body>
 </html>
